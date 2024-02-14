@@ -248,7 +248,28 @@ img {
 /* CARD FLIP */
 
 .back-of-card-text {
+  overflow: hidden;
   color: #111;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 18px; */
+  letter-spacing: -0.28px;
+  text-align: left;
+}
+
+.back-div-h3 {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
 }
 .aliment-list-element-1 {
   display: flex;
@@ -260,28 +281,46 @@ img {
   align-items: center;
   border-color: white;
   perspective: 1000px;
-  background-color: #fd9222;
+  /* background-color: #fd9222; */
   border-color: transparent;
 }
 
+.front-1 {
+  background-color: #fd9222;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-color: transparent;
+}
 .aliment-list-element-2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid #fd9222;
+  /* border: 1px solid #fd9222; */
   border-radius: 15px;
   width: 334px;
   height: 270px;
   flex-shrink: 0;
   align-items: center;
   perspective: 1000px;
-  border-color: ;
+}
+
+.front-2 {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-color: transparent;
+  border: 1px solid #fd9222;
 }
 
 .aliment-list-element-3 {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background: #1e1823;
+  /* background: #1e1823; */
   width: 334px;
   height: 270px;
   flex-shrink: 0;
@@ -289,17 +328,35 @@ img {
   perspective: 1000px;
   border-color: transparent;
 }
+.front-3 {
+  background-color: #1e1823;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-color: transparent;
+}
 
 .aliment-list-element-4 {
   display: flex;
   flex-direction: column;
-  border: 1px solid #fd9222;
+  /* border: 1px solid #fd9222; */
   border-radius: 15px;
   width: 334px;
   height: 270px;
   flex-shrink: 0;
   align-items: center;
   perspective: 1000px;
+}
+.front-4 {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-color: transparent;
+  border: 1px solid #fd9222;
 }
 
 .aliment-list-element-1:hover > .card {
@@ -320,7 +377,6 @@ img {
 .aliment-list-element-4:hover > .card {
   cursor: pointer;
   transform: rotateY(-180deg);
-  transform: translate3d();
 }
 
 .card {
@@ -349,4 +405,53 @@ img {
   background: #fff;
   transform: rotateY(180deg);
   border-style: none;
+}
+
+.back-div {
+  display: flex;
+  width: 279px;
+  height: 220px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.back-orange-fill {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 35px;
+  background: #fd9222;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 120% */
+}
+
+.back-orange-border {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 35px;
+  border: 1px solid #fd9222;
+  background: #fafafa;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 120% */
+}
+
+.space-between-paragraph {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }
