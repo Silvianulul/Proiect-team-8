@@ -3,9 +3,11 @@
   padding: 0;
 }
 
+/* benefits section */
+
 .benefits {
   display: flex;
-  width: 375px;
+  min-width: 375px;
   padding-top: 20px;
   padding-right: 20px;
   flex-direction: column;
@@ -13,6 +15,7 @@
   align-items: center;
   flex-shrink: 0;
   background: #1e1823;
+  padding-left: 15px;
 }
 
 .benefits-list {
@@ -26,7 +29,26 @@
   padding-left: 20px;
 }
 
-.benefits-list-element {
+.benefits-list-element-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
+  padding-right: 28px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.benefits-list-element-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
+  height: 260px;
+  padding-right: 28px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.benefits-list-element-3 {
   display: flex;
   flex-wrap: wrap;
   width: 336px;
@@ -81,11 +103,12 @@
 
 .unique-components-section {
   display: flex;
-  width: 375px;
+  min-width: 375px;
   height: 1376px;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
+  padding-left: 23px;
 }
 
 .unique-components-div {
@@ -112,6 +135,7 @@
   height: 72px;
   width: 250px;
   flex-shrink: 0;
+  padding-left: 2px;
 }
 
 .unique-components-section-title-span {
@@ -138,10 +162,10 @@
 }
 
 .aliment-list {
+  display: flex;
   padding: 0;
   margin-top: 32px;
   list-style: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 375px;
@@ -459,4 +483,260 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 6px;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  /* benefits sections */
+  .benefits {
+    display: flex;
+    min-width: 768px;
+    height: 620px;
+    padding: 50px 32px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    height: 320px;
+    gap: 32px;
+  }
+  .benefits-list-element-1 {
+    display: flex;
+    width: 308px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+
+  .benefits-list-element-2 {
+    display: flex;
+    width: 308px;
+    height: 243px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+  .benefits-list-element-3 {
+    display: flex;
+    width: 308px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+
+  /* Unique Components Section */
+  .unique-components-section {
+    display: flex;
+    min-width: 768px;
+    height: 778px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+    padding-left: 30px;
+  }
+
+  .unique-components-div {
+    display: flex;
+    width: 486px;
+    height: 156px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+  }
+
+  .unique-components-section-title {
+    width: 411px;
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+
+  .unique-components-section-title-span {
+    color: #fd9222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+  .unique-components-section-paragraph {
+    width: 486px;
+    height: 72px;
+    flex-shrink: 0;
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+  }
+
+  .aliment-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 704px;
+    height: 572px;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .benefits {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .benefits-list {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+
+  .benefits-list-element-1 {
+    display: flex;
+    height: 244px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .benefits-list-element-2 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .benefits-list-element-3 {
+    display: flex;
+    width: 308px;
+    height: 244px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+
+  .computer-list-elements-1 {
+    display: flex;
+    width: 308px;
+    height: 244px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .computer-list-elements-2 {
+    display: flex;
+    width: 308px;
+    height: 243px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .computer-list-elements-3 {
+    display: flex;
+    width: 308px;
+    height: 244px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+  }
+
+  /* Unique Components section */
+  .unique-components-section {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+  }
+
+  .unique-components-div {
+    display: flex;
+    width: 486px;
+    height: 156px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+  }
+
+  .unique-components-section-title {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    width: 411px;
+  }
+
+  .unique-components-section-title-span {
+    color: #fd9222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+
+  .unique-components-section-paragraph {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    width: 486px;
+  }
+  .aliment-list {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+  }
 }
